@@ -1,0 +1,181 @@
+body {
+    font-family: sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+}
+
+header {
+    background-color: #d37633;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background-image: url('https://images.stockcake.com/public/5/2/8/5283bb63-e017-4ce6-a8fb-5066f50260f8_large/elegant-dessert-spread-stockcake.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.hero h2 {
+    font-size: 32px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.section {
+    padding: 40px;
+    text-align: center;
+    background-color: burlywood;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.section:hover {
+    background-color: #deb887; 
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.menu-item {
+    background-color: #ffe4c4;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item img:hover {
+    transform: scale(1.07);
+    cursor: pointer;
+}
+
+.menu-item p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #5a3e2b;
+    transition: color 0.3s ease;
+}
+
+.menu-item:hover p {
+    color:#d2691e;
+}
+
+footer {
+    background-color: #d37633;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+ 
+
+.login-body {
+    background-color:antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color:burlywood;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #d37633;
+}
+
+.login-container label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.login-btn {
+    display: inline-block;
+    background-color: #d2691e;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background-color: #a0522d;
+}
+
+.login-container button {
+    background-color: #d2691e;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.signup-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+.signup-link a {
+    color: #d37633;
+    text-decoration: none;
+}
+.signup-link a:hover {
+    text-decoration: underline;
+}
+

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu | Little Treats Bakery</title>
+    <link rel="stylesheet" href="htmlcss.css">
+    <style>
+        .menu-item {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .menu-item button {
+            margin-top: 5px;
+            padding: 5px 10px;
+        }
+        #cart {
+            border-top: 2px solid #ccc;
+            margin-top: 40px;
+            padding-top: 20px;
+        }
+        .cart-item {
+            margin-bottom: 10px;
+        }
+        .quantity-btn {
+            margin: 0 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .add-to-cart {
+            border: 2px solid white;
+            border-radius: 5px;
+            background-color:#d37633;
+            padding: 40px;
+            color:white;
+            margin: 20px;
+        }
+        .add-to-cart:hover {
+            background-color: #d2691e;
+        }
+        .quantity-btn {
+            background-color:#d37633;
+            border: 2px solid white;
+            border-radius: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: white; 
+            font-size: 20px;
+        }
+        .quantity-btn:hover {
+             background-color: #d2691e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Little Treats Bakery</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="bakeryabout.html">About Us</a>
+            <a href="bakerymenu.html">Menu</a>
+            <a href="bakerycontact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="section">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-item" data-name="Chocolate Cupcake" data-price="50">
+                <img src="https://www.yummytummyaarthi.com/wp-content/uploads/2015/07/1-1-500x427.jpeg" alt="Chocolate Cupcake">
+                <p>Chocolate Cupcake - ₹50</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-name="Red Velvet Cake Slice" data-price="70">
+                <img src="https://handletheheat.com/wp-content/uploads/2013/04/red-velvet-cake-recipe-SQUARE.jpg" alt="Red Velvet Cake">
+                <p>Red Velvet Cake Slice - ₹70</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+                 <div class="menu-item" data-name = "Banana Bread" data-price = "150">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs2PFQJelWniS2IpePLh6CftfZKB9i6VA0HQ&s" alt="Banana Bread">
+                <p>Banana Bread - ₹150</p>
+                 <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-name = "Butter Croissant" data-price = "40">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_nIIMndl0t9LMgOtlyg4D0zUszcQ8Z8kPpw&s" alt="Butter Croissant">
+                <p>Butter Croissant - ₹40</p>
+                 <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-name = "Chocolate Chip Cookies" data-price = "100">
+                <img src="https://cdn.loveandlemons.com/wp-content/uploads/2024/08/chocolate-chip-cookie-recipe.jpg" alt="Cookies">
+                <p>Chocolate Chip Cookies - ₹100</p>
+                 <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-name = "Tiramisu" data-price = "120">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIMDSCBCUpNnCO7fVz7tkUgkxsnSTd7ttDlQ&s" alt="Tiramisu">
+                <p>Tiramisu - ₹120</p>
+                 <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-name = "Macaroons" data-price = "150">
+                <img src="https://bakewithshivesh.com/wp-content/uploads/2020/10/IMG-9043-scaled.jpg" alt="Macaroons">
+                <p>Macaroons - ₹150</p>
+                 <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-name = "Blueberry cheesecake" data-price = "80">
+                <img src="https://www.scatteredthoughtsofacraftymom.com/wp-content/uploads/2022/04/blueberry-cheesecake-square.jpg" alt="Cheesecake">
+                <p>Blueberry Cheesecake Slice - ₹80</p>
+                 <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-name = "Donuts" data-price = "100">
+                <img src="https://www.cookwithnabeela.com/wp-content/uploads/2024/02/ChocolateDippedDoughnuts.webp" alt="Donuts">
+                <p>Donuts - ₹100</p>
+                 <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-name = "Belgian Waffles" data-price = "80">
+                <img src="https://content.jdmagicbox.com/comp/chandigarh/g3/0172px172.x172.190110215320.u2g3/catalogue/the-belgian-waffle-sector-22-chandigarh-waffle-centres-zxcvuhlyk5.jpg" alt="Waffles">
+                <p>Belgian Waffles - ₹80</p>
+                 <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Little Treats Bakery</p>
+    </footer>
+
+    <script>
+  const cart = {};
+
+  function updateCart() {
+    const cartBox = document.getElementById('cart-items');
+    cartBox.innerHTML = '';
+
+    let total = 0;
+
+    if (Object.keys(cart).length === 0) {
+      cartBox.innerHTML = '<p>Your cart is empty.</p>';
+      return;
+    }
+
+    for (let item in cart) {
+      const { price, quantity } = cart[item];
+      const itemTotal = price * quantity;
+      total += itemTotal;
+
+      cartBox.innerHTML += `
+        <div class="cart-item">
+          ${item} - ₹${price} x ${quantity} = ₹${itemTotal}
+          <button class="quantity-btn" onclick="changeQty('${item}', 1)">+</button>
+          <button class="quantity-btn" onclick="changeQty('${item}', -1)">-</button>
+        </div>
+         `;
+    }
+
+    cartBox.innerHTML += `<div style="margin-top: 20px; font-weight: bold;">Total Amount: ₹${total}</div>`;
+  }
+
+  function changeQty(item, change) {
+    if (cart[item]) {
+      cart[item].quantity += change;
+      if (cart[item].quantity <= 0) delete cart[item];
+      updateCart();
+    }
+  }
+
+  document.querySelectorAll('.add-to-cart').forEach(btn => {
+    btn.onclick = () => {
+      const itemBox = btn.parentElement;
+      const name = itemBox.dataset.name;
+      const price = parseInt(itemBox.dataset.price);
+
+      if (cart[name]) {
+        cart[name].quantity++;
+      } else {
+        cart[name] = { price, quantity: 1 };
+      }
+
+      updateCart();
+    };
+  });
+
+  updateCart(); 
+</script>
+</body>
+</html>
+
